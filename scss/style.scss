@@ -1,0 +1,31 @@
+// FONT STYLE
+
+@font-face { // 눈누 웹폰트 -- 여기어때 잘난체
+    font-family: 'yg-jalnan';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face { // 눈누 웹폰트 -- HS 새마을체
+    font-family: 'HSSaemaul-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/HSSaemaul-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    
+    font-family: 'yg-jalnan';
+
+    button, input{
+        font-family: 'HSSaemaul-Regular';
+    }
+}
+
+
+
+
+
+
+
