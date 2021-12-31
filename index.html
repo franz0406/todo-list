@@ -7,6 +7,7 @@
     <meta name="keywords" content="투두리스트,할일,todo,list,">
     <meta name="description" content="하고싶은 일들을 적어놓고 실천 하세요">
     <meta name="robots" content="noindex,nofollow">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     <link rel="stylesheet" href="css/style.css">
     <title>Todo List</title>
 </head>
@@ -16,15 +17,18 @@
         <header>
             <h1>Todo List</h1>
         </header>
-        <form action="#" class="login_form">
+        <form action="#" class="login_form hidden">
             <input type="text" placeholder="이름을 입력해 주세요." maxlength="10">
-            <button type="button">확인</button>
+            <button type="submit">확인</button>
             <div>
                 <p>이름을 입력해 주세요!!</p>
             </div>
         </form>
-
+        <h2 id="user_name" class="hidden"><!-- data from app.js --></h2>
+        <section>
+            <div></div>
+        </section>
     </div>
-    <script src="js/app.js"></script>
+    <script src="js/username.js"></script>
 </body>
 </html>

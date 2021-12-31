@@ -25,7 +25,10 @@ body{
     }
 } // FONT STLYE ENDS
 
-// 이름 입력 모달창
+// COMMON CSS
+.hidden{ display: none; }
+
+// 이름 입력 경고 모달창
 .login_form{
 
     div{
@@ -55,6 +58,7 @@ body{
     }
 }
 
+// 애니메이션
 @keyframes show{
     0%{opacity: 0;}
     100%{opacity: 1;}

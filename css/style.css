@@ -86,6 +86,10 @@ body button, body input {
   font-family: 'HSSaemaul-Regular';
 }
 
+.hidden {
+  display: none;
+}
+
 .login_form div {
   display: none;
   position: fixed;
