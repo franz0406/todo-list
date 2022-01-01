@@ -86,6 +86,11 @@ body button, body input {
   font-family: 'HSSaemaul-Regular';
 }
 
+body {
+  width: 100vh;
+  height: 100vh;
+}
+
 .hidden {
   display: none;
 }

@@ -16,14 +16,19 @@
     font-style: normal;
 }
 
-body{
-    
+body{    
     font-family: 'yg-jalnan';
 
     button, input{
         font-family: 'HSSaemaul-Regular';
     }
 } // FONT STLYE ENDS
+
+// LAYOUT
+body{
+    width: 100vh;
+    height: 100vh;
+}
 
 // COMMON CSS
 .hidden{ display: none; }
