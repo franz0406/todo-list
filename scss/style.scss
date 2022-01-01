@@ -1,5 +1,7 @@
 // RESET CSS
 @import 'reset';
+// VARIABLES
+@import 'variable';
 
 // FONT STYLE
 @font-face { // 눈누 웹폰트 -- 여기어때 잘난체
@@ -26,8 +28,27 @@ body{
 
 // LAYOUT
 body{
-    width: 100vh;
+    padding: 20px;
+    width: 100%;
     height: 100vh;
+    overflow-x: hidden;
+    transition: all 0.3s linear;
+
+    #wrapper{
+        padding: 20px;
+        width: 100%;
+        max-width: 400px;
+        min-width: 300px;
+        position: relative;
+        left: 50%; top: 50%;
+        transform: translate(-50%, -50%);
+        color:$white;
+        background: $main-color;
+        border-radius: 10px;
+        @include box-shadow(10px);
+        @include box-shadow(20px);
+        @include box-shadow(30px);
+    }
 }
 
 // COMMON CSS
@@ -41,7 +62,7 @@ body{
         position: fixed;
         top: 0; bottom: 0;  right: 0; left: 0;
         padding:30px 50px;
-        background: rgba(0,0,0,0.5);
+        background: rgba(0,0,0,0.7);
         animation: show .3s linear forwards;
         &.modal{
             display: block;

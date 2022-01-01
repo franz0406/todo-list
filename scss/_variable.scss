@@ -1,0 +1,12 @@
+// COLOR
+
+$main-color:#3f3f3f;
+$white:#fff;
+
+$shadow-color:#fff;
+
+// Mixin
+
+@mixin box-shadow($val) {
+    box-shadow: 0 0 $val $shadow-color;
+}
