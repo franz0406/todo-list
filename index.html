@@ -16,22 +16,32 @@
 
         <header>
             <h1>Todo List</h1>
+            <img src="./images/logo.png" alt="logo">
         </header>
         <form action="#" class="login_form hidden">
-            <input type="text" placeholder="이름을 입력해 주세요." maxlength="10">
+            <input type="text" placeholder="이름을 입력해 주세요." maxlength="8">
             <button type="submit">확인</button>
             <div>
                 <p>이름을 입력해 주세요!!</p>
             </div>
         </form>
         <h2 id="user_name" class="hidden"><!-- data from app.js --></h2>
+        <section id="todo_list" class="hidden">
+            <form action="#">
+                <input type="text" placeholder="할 일을 적어 주세요. ( 10글자 이내 )" maxlength="10" required>
+                <button type="submit">추가</button>
+            </form>
+            <ul></ul> 
+        </section>
         <section>
             <h2 class="clock">00:00:00</h2>
             <p>0000-00-00</p>
         </section>
+
     </div>
     <script src="js/username.js"></script>
     <script src="js/clock.js"></script>
     <script src="js/random-bg.js"></script>
+    <script src="js/todo.js"></script>
 </body>
 </html>
