@@ -309,7 +309,7 @@ header img {
 }
 
 #todo_list ul {
-  max-height: 230px;
+  height: 230px;
   overflow-y: auto;
   margin-top: 20px;
   color: #fff;
