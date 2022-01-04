@@ -2,7 +2,6 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-@import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -127,6 +126,20 @@ body #wrapper {
 
 .hidden {
   display: none !important;
+}
+
+ul::-webkit-scrollbar {
+  width: 10px;
+}
+
+ul::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+ul::-webkit-scrollbar-button {
+  height: 5px;
+  background: white;
 }
 
 #user_name {
@@ -291,12 +304,13 @@ header img {
 }
 
 #todo_list form button:hover {
-  color: #fff;
-  background: #3f3f3f;
-  border: 1px solid #fff;
+  background: #d5e642;
+  border: 1px solid #3f3f3f;
 }
 
 #todo_list ul {
+  max-height: 230px;
+  overflow-y: auto;
   margin-top: 20px;
   color: #fff;
 }
@@ -309,9 +323,11 @@ header img {
       -ms-flex-align: center;
           align-items: center;
   padding: 4px;
+  margin-right: 8px;
   margin-bottom: 5px;
   border: 1px solid #fff;
   font-size: 18px;
+  background: rgba(255, 255, 255, 0.1);
 }
 
 #todo_list ul li span {
@@ -326,13 +342,13 @@ header img {
   position: absolute;
   content: "";
   top: 50%;
-  left: 0;
+  left: 4px;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   width: 6px;
   height: 6px;
   border-radius: 3px;
-  background: #fff;
+  background: #d5e642;
 }
 
 #todo_list ul li button {
@@ -348,8 +364,8 @@ header img {
 }
 
 #todo_list ul li button:hover {
-  background: #3f3f3f;
-  color: #fff;
+  background: #d5e642;
+  border: 1px solid #3f3f3f;
 }
 
 .date {
@@ -368,6 +384,11 @@ header img {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+}
+
+.date span {
+  text-transform: uppercase;
+  color: #d5e642;
 }
 
 .login_form div {
