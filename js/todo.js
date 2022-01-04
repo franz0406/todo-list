@@ -5,9 +5,8 @@ const todoContainer = document.querySelector("#todo_list"),     // 투두리스�
 
 let todoArr = []; // 투두리스트 담을 배열
 
-
 const savedTodos = JSON.parse(localStorage.getItem("todo"));    // 가져온 값들을 투두리스트 배열에 추가
-savedTodos.forEach(items => todoArr.push(items)); 
+if(savedTodos !== null) savedTodos.forEach(items => todoArr.push(items));
 
 todoArr.forEach(item => createTodoList(item));                  // 저장된 배열 값들로 li 태그 생성함수 호출
 
