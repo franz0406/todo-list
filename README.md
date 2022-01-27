@@ -1,6 +1,6 @@
 ### 자바스크립트 공부
 
-#### https://franz0406.github.io/todo-list/
+#### 투두 리스트 https://franz0406.github.io/todo-list/
 ---
 ---
 
